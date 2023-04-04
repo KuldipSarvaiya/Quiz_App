@@ -1,38 +1,136 @@
-.App {
-  text-align: center;
+body{ 
+  padding-top: 15vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.profile-picture {
+   height: 100px;
+   width: 100px;
+   border-radius: 50px;
+ }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+ .profile-main {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 0% 2%;
+   background-color: aquamarine;
+   padding: 10px;
+   border-radius: 20px;
+   background-color: rgb(152, 169, 184);
+   height: auto;
+ }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+ .new-quiz {
+   background-color: rgb(49, 53, 53);
+   border: 1px solid rgb(49, 53, 53);
+   box-shadow: inset 2px 0px 2px rgb(124, 120, 120), inset 0px 2px 2px rgb(124, 120, 120),
+     2px 0px 2px rgb(56, 54, 54), 0px 2px 2px rgb(56, 54, 54);
+   font-family: 'Courier New', Courier, monospace;
+   padding: 7px;
+   border-radius: 15px;
+   color: white;
+   font-size: larger;
+   font-weight: 900;
+   text-shadow: 0px 0px 2px wheat;
+   text-decoration: none;
+   width: fit-content;
+ }
 
-.App-link {
-  color: #61dafb;
-}
+ .my-name {
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   font-family: fantasy;
+   font-weight: 900;
+ }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+ .que-div {
+   padding: 5px;
+   background-color: rgb(158, 164, 177);
+   border-radius: 20px;
+ }
+
+ .option-div {
+   display: flex;
+   flex-direction: row;
+   column-gap: 50px;
+   flex-wrap: wrap;
+   font-size: large;
+   font-weight: 600;
+ }
+
+ .all-que-div {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 10px 5px 50px;
+   gap: 20px;
+   justify-content: center;
+   margin-top: -14vh;
+ }
+
+ .Check-Ans,
+ .que-btn {
+   background-color: cornflowerblue;
+   padding: 10px;
+   border: none;
+   box-shadow: 2px 0px 5px rgb(56, 54, 54), 0px 2px 5px rgb(56, 54, 54);
+   border-radius: 10px;
+   font-size: medium;
+   font-weight: 700;
+   letter-spacing: 2px;
+   align-self: center;
+   width: "fit-content"
+ }
+
+ .Check-Ans:hover {
+   box-shadow: 2px 0px 5px rgb(56, 54, 54) inset, inset 0px 2px 5px rgb(56, 54, 54);
+   font-size: 15.5px;
+   cursor: pointer;
+ }
+
+ .result-div,
+ .set-que {
+   background-color: rgb(152, 169, 184);
+   padding: 20px;
+   margin: 5% 2% 2%;
+   border-radius: 20px;
+   font-size: larger;
+   font-weight: 600;
+   font-family: serif;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+
+ .que-level {
+   display: flex;
+   flex-direction: row;
+   gap: 20px;
+   border: 2px solid black;
+   padding: 5px;
+ }
+
+ .que-type {
+   border: 2px solid black;
+   background-color: rgb(158, 172, 177);
+   padding: 5px 0px;
+ }
+
+ .que-type:focus {
+   border: 2px solid black;
+   background-color: rgb(228, 241, 245);
+ }
+
+ .que-btn {
+   background-color: aliceblue;
+   color: black;
+ }
+
+ .close-about{
+  color: black;
+  border: 2px solid black;
+  padding: 3px;
+  border-radius: 10px;
+  font-weight: 700; 
+  width:50px;
+ }
